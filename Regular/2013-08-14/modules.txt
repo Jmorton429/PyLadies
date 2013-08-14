@@ -1,0 +1,16 @@
+1) What is a module?
+   A module is a file containing Python definitions and statements.
+2) How do I use modules?
+   import [module name], [module name].[module function]
+3) Random module
+   Generates random numbers!
+4) randrange - Return a randomly selected element from range(start, stop, step).
+   random - generates a random float uniformly in the semi-open range [0.0, 1.0)
+   shuffle - shuffles an array in place
+   randint - Return a random integer N such that a <= N <= b.
+5) When would I use it?
+   Games! Example: need a computer result in rock paper scissors.
+6) BeautifulSoup
+   Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+7) Why would I use it?
+   Need to get data from a website?  This is the most efficient way.
