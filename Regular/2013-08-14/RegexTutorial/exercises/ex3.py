@@ -1,5 +1,5 @@
 # Exercise 3 - examples with ^, $, \b
-
+import re
 # Go through each line and predict whether there will be a match or not. 
 # Then run this program and see whether you were right.
 

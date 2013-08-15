@@ -1,5 +1,6 @@
 # Exercise 5a - Set complements
-
+import re
+from test_regex import test_regex
 # Let's rearrange the metacharacter_regex from Exercise 4d. 
 # Why doesn't it work as we wanted?
 

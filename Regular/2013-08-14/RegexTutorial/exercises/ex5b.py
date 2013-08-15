@@ -1,5 +1,6 @@
 # Exercise 5b - Set complements
-
+import re
+from test_regex import test_regex
 # You're processing some DNA sequences and you notice that some of them 
 # have been corrupted - they contain letters other than A,T,C and G! 
 # Write a regex that will let you remove the corrupted sequences.

@@ -1,4 +1,6 @@
 # Exercise 5c - Set complements
+import re
+from test_regex import test_regex
 
 # You're looking at a list of purchases again. 
 # Acme company uses product codes with A,B,C followed by three digits.
