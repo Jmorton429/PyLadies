@@ -19,3 +19,5 @@ Use the backslash (\\) before a special character you need to print. Using %r wi
 
 > print "So, you're %r old, %r tall and %r heavy." % (
     age, height, weight)
+    
+[Go to Chapter 11](http://learnpythonthehardway.org/book/ex11.html)
