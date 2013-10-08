@@ -2,4 +2,5 @@
 ================
 
 Subjects covered:
-* Modules: Random and BeautifulSoup - [https://github.com/jmorton429](Jennifer Morton)
+* Service Oriented Architecture - [Dean Dieker](https://github.com/deanxorr)
+* Modules: Random and BeautifulSoup - [Jennifer Morton](https://github.com/jmkoni)
