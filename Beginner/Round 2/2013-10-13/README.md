@@ -120,6 +120,22 @@ Example using readline on a file (filename) that only contains two lines of text
 [Go to Chapter 16](http://learnpythonthehardway.org/book/ex16.html)
 
 
+**17\. Examples working with Files including Exists (and cat):** Use exists(filename) to check whether a file exists. Exists will return a Boolean (True/False) value. Command Line Tip: (This is NOT a python function) type cat followed by your filename to print out the contents of a file.
+
+[Go to Chapter 17](http://learnpythonthehardway.org/book/ex17.html)
+
+**18\. Functions:** To wrap a piece of code into a function, start with a line that names the function and its parameters.
+    
+    def print_two_again(arg1, arg2):
+
+Then follow up with your code, indented four spaces.
+
+         print "arg1: %r, arg2: %r" % (arg1, arg2)
+
+[Go to Chapter 18](http://learnpythonthehardway.org/book/ex18.html)
+
+
+
 
 
 
