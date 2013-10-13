@@ -4,7 +4,7 @@ AGENDA
 2. Split into project groups
 3. Work on projects for an hour?
 4. Ask for four volunteers from different groups to present each project
-5. Review existing code that uses these concepts (code in this repo and at https://github.com/eudaimonious/data-formatting-tool)
+5. Review existing code that uses these concepts in the [PyLadies Repo](https://github.com/PyLadies-Boston/PyLadies-Boston-Meetups/tree/master/Beginner/Round%201/2013-07-07) and in [Margaret's Repo](https://github.com/eudaimonious/data-formatting-tool)
 
 
 # PROJECT 1
