@@ -45,10 +45,46 @@ Import argv from the module called sys. Argv stands for "argument variable." It 
 
 
 >print "The script is called:", script
+
 >print "Your first variable is:", first
+
 >print "Your second variable is:", second
+
 >print "Your third variable is:", third
 
 [What is the difference between an argument and a paremeter?](http://stackoverflow.com/questions/3176310/difference-between-parameter-and-argument)
 
 [Go to Chapter 13](http://learnpythonthehardway.org/book/ex13.html)
+
+
+**14\. Passing a variable to raw_input:** When you start to repeat yourself, use a variable instead of raw text. If you want to change 
+that text, you'll only need to do it in one place.
+
+>prompt = '> '
+
+
+>print "Do you like me %s?" % user_name
+
+>likes = raw_input(prompt)
+
+
+>print "Where do you live %s?" % user_name
+
+>lives = raw_input(prompt)
+
+
+>print "What kind of computer do you have?"
+
+>computer = raw_input(prompt)
+
+[Go to Chapter 14](http://learnpythonthehardway.org/book/ex14.html)
+
+
+**15\. Reading Files:** Create a new variable assignment (eg, "txt") and pass a filename to the "open" function. Then apply the ".read()" method.
+
+>txt = open(filename)
+
+
+>print txt.read()
+
+[Go to Chapter 15](http://learnpythonthehardway.org/book/ex15.html)
