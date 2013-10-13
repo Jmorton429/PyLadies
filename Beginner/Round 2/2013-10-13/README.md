@@ -80,7 +80,7 @@ that text, you'll only need to do it in one place.
 [Go to Chapter 14](http://learnpythonthehardway.org/book/ex14.html)
 
 
-**15\. Reading Files:** Create a new variable assignment (eg, "txt") and pass a filename to the "open" function. Then apply the ".read()" method.
+**15\. Reading Files:** Create a new variable assignment (eg, "txt") and pass a filename to the "open" function. Then apply the ".read()" method, which uses "dot notation."
 
 >txt = open(filename)
 
@@ -88,3 +88,38 @@ that text, you'll only need to do it in one place.
 >print txt.read()
 
 [Go to Chapter 15](http://learnpythonthehardway.org/book/ex15.html)
+
+**16\. Working with Files:** Use open as in chapter 15 but pass it a second argument, "w", to open the file in write mode.
+>text = open(filename, 'w')
+
+You can also use dot notation to:
+
+close -- Closes the file. Like File->Save.. in your editor.
+
+read -- Reads the contents of the file. You can assign the result to a variable.
+
+readline -- Reads just one line of a text file.
+
+truncate -- Empties the file. Watch out if you care about the file.
+
+write(stuff) -- Writes stuff to the file.
+
+Example using readline on a file (filename) that only contains two lines of text.
+> \>\>\> filename.readline()
+
+>'This is the first line of the file.\n'
+
+> \>\>\> filename.readline()
+
+>'Second line of the file\n'
+
+> \>\>\> f.readline()
+
+> ''
+
+[Go to Chapter 16](http://learnpythonthehardway.org/book/ex16.html)
+
+
+
+
+
