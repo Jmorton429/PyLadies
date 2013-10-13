@@ -8,11 +8,23 @@ AGENDA
 
 
 # PROJECT 1
-1. Ask user for file name
-2. Check to see if file exists
-3. If file currently exists, allow the user to cancel out
-4. Define a function that takes in a file name and writes a file to that name. Put whatever you want in the file.<br />
-5. *Extra Challenge:* Use string formatters
+
+*Hint:* Check out [Chapter 17](http://learnpythonthehardway.org/book/ex17.html)
+
+One: Ask user for file name
+
+Two: Check to see if file exists
+
+Three: If file currently exists, allow the user to cancel out
+ 
+*Hint:*
+	
+	if exists(filename):
+		your code here
+
+Four:  Write some text in that file.
+
+Five: *Extra Challenge:* Use string formatters
 
 
 # PROJECT 2
