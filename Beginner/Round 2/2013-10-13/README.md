@@ -21,3 +21,34 @@ Use the backslash (\\) before a special character you need to print. Using %r wi
     age, height, weight)
     
 [Go to Chapter 11](http://learnpythonthehardway.org/book/ex11.html)
+
+
+**12\. Prompting People:**
+> age = raw_input("How old are you? ")
+
+> height = raw_input("How tall are you? ")
+
+> weight = raw_input("How much do you weigh? ")
+
+> print "So, you're %r old, %r tall and %r heavy." % ( age, height, weight)
+
+[Go to Chapter 12](http://learnpythonthehardway.org/book/ex12.html)
+
+
+**13\. Parameters, Unpacking, Variables:**
+Import argv from the module called sys. Argv stands for "argument variable." It is a variable that holds any arguments you include when you run your Python script from the command line. You can "unpack" argv, and other things, by assigning each of the arguments it contains to a variable.
+
+>from sys import argv
+
+
+>script, first, second, third = argv
+
+
+>print "The script is called:", script
+>print "Your first variable is:", first
+>print "Your second variable is:", second
+>print "Your third variable is:", third
+
+[What is the difference between an argument and a paremeter?](http://stackoverflow.com/questions/3176310/difference-between-parameter-and-argument)
+
+[Go to Chapter 13](http://learnpythonthehardway.org/book/ex13.html)
