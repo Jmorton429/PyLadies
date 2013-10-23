@@ -17,6 +17,7 @@ Got some questions from an attendee and wanted to answer both directly and to th
 2.  What are the different parts of an API and what order do they go in? (authentication?, request/call?, output?)
 
   Order, like syntax, depends on the API. Generally authentication is first, followed by the request. The output is the response… so it's at the end :) Here's a breakdown:
+
     request = 'http://developer.echonest.com/api/v4/so­ng/search?api_key=12345&format=json&­results=1&min_danceability=0.4&s­ong_min_hotttnesss=0.4'
 
   http://developer.echo...­ - the url. this is the basis of any api call. For this one, you can see that you are looking at songs and in particular the search method.
