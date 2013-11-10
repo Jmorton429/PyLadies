@@ -18,32 +18,32 @@ def enter_casino():
                 
 
 def slot_machine():
-	fruits = ['apple', 'watermelon', 'strawberry', 'banana']
-	
-	index  = random.randint(0, 3)
-	fruit1 = fruits[index]
+        fruits = ['apple', 'watermelon', 'strawberry', 'banana']
+        
+        index = random.randint(0, 3)
+        fruit1 = fruits[index]
 
-	index  = random.randint(0, 3)
-	fruit2 = fruits[index]
+        index = random.randint(0, 3)
+        fruit2 = fruits[index]
 
-	index  = random.randint(0, 3)
-	fruit3 = fruits[index]
+        index = random.randint(0, 3)
+        fruit3 = fruits[index]
 
-	print fruit1 + ' / ' + fruit2 + ' / ' + fruit3
-	if fruit1 == fruit2 == fruit3:
-		print 'You won!!!'
-	else:
-		print 'Maybe next time'
-		
+        print fruit1 + ' / ' + fruit2 + ' / ' + fruit3
+        if fruit1 == fruit2 == fruit3:
+                print 'You won!!!'
+        else:
+                print 'Maybe next time'
+                
 def blackjack():
     deck = range(1,11)
     
-    myCardsSum = 0      
+    myCardsSum = 0
     continuePlaying = 'y'
     
     while continuePlaying == 'y' and myCardsSum < 21:
         randomCard = choice(deck)
-        deck.remove(randomCard) 
+        deck.remove(randomCard)
         myCardsSum += randomCard
         print 'You drew a ' + str(randomCard) + ', your sum is ' + str(myCardsSum) + '\n'
         if myCardsSum == 21:
