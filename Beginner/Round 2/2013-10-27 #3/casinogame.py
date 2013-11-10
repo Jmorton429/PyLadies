@@ -82,52 +82,86 @@ def start_guessing_game():
         guessing_game(7, number)
         
 def FantasyCasino():
+    print chr(27) + "[2J"
     print """"
-From outside, the Fantasy Casino looks like a tropical paradise. Lush greenery
-sprouts from the concrete and stretches, touching the clouds. You push aside
-the brambles and enter the large wooden doors. There are three types of slot
-machines - a Fairy Themed Machine, a Ghost Themed Machine and an Aquatic
-Themed Machine - which one do you pick?
 
-.-------.
-|Jackpot|
-____________|_______|____________
-| __ __ ___ _____ __ |
-| / _\ / / /___\/__ \ / _\ |
-| \ \ / / // // / /\ \\ \ []|
-| _\ \/ /___/ \_// / / \/_\ \ []|
-| \__/\____/\___/ \/ \__/ []|
-|===_______===_______===_______===|
-||*|\_ |*| _____ |*|\_ |*||
-||*|| \ _ |*|| ||*|| \ _ |*||
-||*| \_(_) |*||*BAR*||*| \_(_) |*||
-||*| (_) |*||_____||*| (_) |*|| __
-||*|_______|*|_______|*|_______|*||(__)
-|===_______===_______===_______===| ||
-||*| _____ |*|\_ |*| ___ |*|| ||
-||*|| ||*|| \ _ |*| |_ | |*|| ||
-||*||*BAR*||*| \_(_) |*| / / |*|| ||
-||*||_____||*| (_) |*| /_/ |*|| ||
-||*|_______|*|_______|*|_______|*||_//
-|===_______===_______===_______===|_/
-||*| ___ |*| | |*| _____ |*||
-||*| |_ | |*| / \ |*|| ||*||
-||*| / / |*| /_ _\ |*||*BAR*||*||
-||*| /_/ |*| O |*||_____||*||
-||*|_______|*|_______|*|_______|*||
-|===___________________________===|
-| /___________________________\ |
-| | | |
-_| \_______________________/ |_
-(_____________________________________)
+    From outside, the Fantasy Casino looks like a tropical paradise. Lush greenery
+    sprouts from the concrete and stretches, touching the clouds. You push aside
+    the brambles and enter the large wooden doors. There are three types of slot 
+    machines - a Fairy Themed Machine, a Ghost Themed Machine and an Aquatic
+    Themed Machine - which one do you pick?
+
+                              .-------.
+                              |Jackpot|
+                  ____________|_______|____________
+                 |  __    __    ___  _____   __    |  
+                 | / _\  / /   /___\/__   \ / _\   | 
+                 | \ \  / /   //  //  / /\ \\ \  []|  
+                 | _\ \/ /___/ \_//  / /  \/_\ \ []| 
+                 | \__/\____/\___/   \/     \__/ []|
+                 |===_______===_______===_______===|
+                 ||*|\_     |*| _____ |*|\_     |*||
+                 ||*|| \ _  |*||     ||*|| \ _  |*||
+                 ||*| \_(_) |*||*BAR*||*| \_(_) |*||
+                 ||*| (_)   |*||_____||*| (_)   |*|| __
+                 ||*|_______|*|_______|*|_______|*||(__)
+                 |===_______===_______===_______===| ||
+                 ||*| _____ |*|\_     |*|  ___  |*|| ||
+                 ||*||     ||*|| \ _  |*| |_  | |*|| ||
+                 ||*||*BAR*||*| \_(_) |*|  / /  |*|| ||
+                 ||*||_____||*| (_)   |*| /_/   |*|| ||
+                 ||*|_______|*|_______|*|_______|*||_//
+                 |===_______===_______===_______===|_/
+                 ||*|  ___  |*|   |   |*| _____ |*||
+                 ||*| |_  | |*|  / \  |*||     ||*||
+                 ||*|  / /  |*| /_ _\ |*||*BAR*||*||              
+                 ||*| /_/   |*|   O   |*||_____||*||        
+                 ||*|_______|*|_______|*|_______|*||
+                 |===___________________________===|
+                 |  /___________________________\  |
+                 |   |                         |   |
+                _|    \_______________________/    |_
+               (_____________________________________)
 
 
-"""
+    """
     theme = raw_input("Type fairy, ghost or aquatic.").lower()
     if theme == "fairy":
         print "A fairy appears."
+    
+    if theme == "ghost":
+        print chr(27) + "[2J"
+        print """
+
+           ,                           You pull the lever. Whoosh Whoosh WHOOSH!
+        .--')                          You feel rushes of cold air all around you.
+       /    /                          A THUD, on your chest knocks you down.
+      |    /                           You sit there on the floor, trying to 
+   /`.\   (_.'\\                       see something, anything that could have
+   \          /                        pushed you down. The air has stilled. 
+    '--. .---'                         Patting your pockets, you find them empty.
+      ( " )
+       '-'
+                ,
+                 \`-,      ,     =-
+             .-._/   \_____)\\
+            ("              / =-
+             '-;   ,_____.-'       =-
+              /__.'
+
+
+       .-.
+      ( " )
+   /\_.' '._/\\
+   |         |
+    \       /
+     \    /`
+   (__)  /
+   `.__.'
+"""
     else:
     	print "You can only choose fairy, ghost, or aquatic. Please try again."
     	FantasyCasino()
+
 
 enter_casino()
