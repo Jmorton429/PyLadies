@@ -8,7 +8,7 @@ def booted():
 
 def enter_casino():
     print "You just entered a casino with slots, blackjack, and a guessing game."
-    game = raw_input("What would you like to play? ")
+    game = raw_input("What would you like to play? ").lower()
     if game == "slots":
         slot_machine()
     elif game == "blackjack":
@@ -70,7 +70,7 @@ def blackjack():
             print 'You are busted, you die a horrible death'
             return
         else:
-            continuePlaying = raw_input('Do you want to draw another card? y/n \n')
+            continuePlaying = raw_input('Do you want to draw another card? y/n \n').lower()
 
     dealerSum = randint(1, 56)
     print 'Dealer drew a ' + str(dealerSum) + '\n'
@@ -81,7 +81,6 @@ def blackjack():
     pick_game()
 
 def guessing_game(lucky_number, number):
-
     print "You guessed %d." % number
 
     if number == lucky_number:
@@ -95,94 +94,57 @@ def guessing_game(lucky_number, number):
   pick_game()
 
 def start_guessing_game():
-    print "Welcome to the guessing game."
-    number = input("Guess a number between 1 and 10.")
-    guessing_game(7, number)
+        print "Welcome to the guessing game."
+        number = input("Guess a number between 1 and 10.")
+        guessing_game(7, number)
 
 def FantasyCasino():
     print """"
-    From outside, the Fantasy Casino looks like a tropical paradise. Lush greenery
-    sprouts from the concrete and stretches, touching the clouds. You push aside
-    the brambles and enter the large wooden doors. There are three types of slot
-    machines - a Fairy Themed Machine, a Ghost Themed Machine and an Aquatic
-    Themed Machine - which one do you pick?
+From outside, the Fantasy Casino looks like a tropical paradise. Lush greenery
+sprouts from the concrete and stretches, touching the clouds. You push aside
+the brambles and enter the large wooden doors. There are three types of slot
+machines - a Fairy Themed Machine, a Ghost Themed Machine and an Aquatic
+Themed Machine - which one do you pick?
 
-                              .-------.
-                              |Jackpot|
-                  ____________|_______|____________
-                 |  __    __    ___  _____   __    |
-                 | / _\  / /   /___\/__   \ / _\   |
-                 | \ \  / /   //  //  / /\ \\ \  []|
-                 | _\ \/ /___/ \_//  / /  \/_\ \ []|
-                 | \__/\____/\___/   \/     \__/ []|
-                 |===_______===_______===_______===|
-                 ||*|\_     |*| _____ |*|\_     |*||
-                 ||*|| \ _  |*||     ||*|| \ _  |*||
-                 ||*| \_(_) |*||*BAR*||*| \_(_) |*||
-                 ||*| (_)   |*||_____||*| (_)   |*|| __
-                 ||*|_______|*|_______|*|_______|*||(__)
-                 |===_______===_______===_______===| ||
-                 ||*| _____ |*|\_     |*|  ___  |*|| ||
-                 ||*||     ||*|| \ _  |*| |_  | |*|| ||
-                 ||*||*BAR*||*| \_(_) |*|  / /  |*|| ||
-                 ||*||_____||*| (_)   |*| /_/   |*|| ||
-                 ||*|_______|*|_______|*|_______|*||_//
-                 |===_______===_______===_______===|_/
-                 ||*|  ___  |*|   |   |*| _____ |*||
-                 ||*| |_  | |*|  / \  |*||     ||*||
-                 ||*|  / /  |*| /_ _\ |*||*BAR*||*||
-                 ||*| /_/   |*|   O   |*||_____||*||
-                 ||*|_______|*|_______|*|_______|*||
-                 |===___________________________===|
-                 |  /___________________________\  |
-                 |   |                         |   |
-                _|    \_______________________/    |_
-               (_____________________________________)
-
-
-    """
-    theme = raw_input("Type fairy, ghost or aquatic.")
-    if theme == "fairy":
-        print """
+.-------.
+|Jackpot|
+____________|_______|____________
+| __ __ ___ _____ __ |
+| / _\ / / /___\/__ \ / _\ |
+| \ \ / / // // / /\ \\ \ []|
+| _\ \/ /___/ \_// / / \/_\ \ []|
+| \__/\____/\___/ \/ \__/ []|
+|===_______===_______===_______===|
+||*|\_ |*| _____ |*|\_ |*||
+||*|| \ _ |*|| ||*|| \ _ |*||
+||*| \_(_) |*||*BAR*||*| \_(_) |*||
+||*| (_) |*||_____||*| (_) |*|| __
+||*|_______|*|_______|*|_______|*||(__)
+|===_______===_______===_______===| ||
+||*| _____ |*|\_ |*| ___ |*|| ||
+||*|| ||*|| \ _ |*| |_ | |*|| ||
+||*||*BAR*||*| \_(_) |*| / / |*|| ||
+||*||_____||*| (_) |*| /_/ |*|| ||
+||*|_______|*|_______|*|_______|*||_//
+|===_______===_______===_______===|_/
+||*| ___ |*| | |*| _____ |*||
+||*| |_ | |*| / \ |*|| ||*||
+||*| / / |*| /_ _\ |*||*BAR*||*||
+||*| /_/ |*| O |*||_____||*||
+||*|_______|*|_______|*|_______|*||
+|===___________________________===|
+| /___________________________\ |
+| | | |
+_| \_______________________/ |_
+(_____________________________________)
 
 
-
-
-            ___
-   __     / ::.:\\                     You pull the lever, aha! Three fairies!
- /::::'-.|::::&&&&&                   Suddenly, you feel a tap tap on your
- |::::::.\\\\ .&&&&/ \\                 shoulder. Your eyes follow. A slender
-  \ ::..::\\\\:&&? <,(                stick? Looking up, that face... it's a
-   \ ::::. \\\\ &&  _/                wand... held by a fairy! She smiles and
-  /::'.:::. \\\\&&.|.                 disappears in a poof. There is a pile of
-  | ..:'-.- / )___\ \\                 bills where she once stood.
-   \ :::   /./|))))) '
-     '-..-'./ \ --| \\\\
-          ||   ) .|  \\\\.
-          |\  /___|   \_)
-          |_)///|\\\\\\
-             ||||\\\\\\'
-              \  | |
-             _.\ / /.__
-          .-' \/ | |/  '-.
-        / .  .(  | | .  .  \\
-      _|_   .  \ | |   .   _|_
-     /    '-.  #)|)|#  . -'   \\
-    |   .    ##/ | |###    .   |
-    |  . .  ####\|\|####  . .  |
-     \___ .-'########## '-.___/
-      |     .  *####*  .     |
-       \  . . / . . .\  . .  /
-        \    / .  .  .\  .  /
-          '-( .    .  .)-.'
-              ' ----- '
-                / /
-               / /
-               ( (
-                \ \\
-                 \ \\
-                  ) )
-                  / /
 """
+    theme = raw_input("Type fairy, ghost or aquatic.").lower()
+    if theme == "fairy":
+        print "A fairy appears."
+    else:
+    	print "You can only choose fairy, ghost, or aquatic. Please try again."
+    	FantasyCasino()
 
 enter_casino()
