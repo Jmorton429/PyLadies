@@ -82,6 +82,7 @@ def start_guessing_game():
 	guessing_game(7, number)
 	
 def FantasyCasino():
+    print chr(27) + "[2J"
     print """"
     From outside, the Fantasy Casino looks like a tropical paradise. Lush greenery
     sprouts from the concrete and stretches, touching the clouds. You push aside
@@ -125,6 +126,7 @@ def FantasyCasino():
     """
     theme = raw_input("Type fairy, ghost or aquatic.")
     if theme == "fairy":
+        print chr(27) + "[2J"
         print """
 
 
@@ -165,6 +167,36 @@ def FantasyCasino():
                  \ \\
                   ) )
                   / /
+"""
+    if theme == "ghost":
+        print chr(27) + "[2J"
+        print """
+
+           ,                           You pull the lever. Whoosh Whoosh WHOOSH!
+        .--')                          You feel rushes of cold air all around you.
+       /    /                          A THUD, on your chest knocks you down.
+      |    /                           You sit there on the floor, trying to 
+   /`.\   (_.'\\                       see something, anything that could have
+   \          /                        pushed you down. The air has stilled. 
+    '--. .---'                         Patting your pockets, you find them empty.
+      ( " )
+       '-'
+                ,
+                 \`-,      ,     =-
+             .-._/   \_____)\\
+            ("              / =-
+             '-;   ,_____.-'       =-
+              /__.'
+
+
+       .-.
+      ( " )
+   /\_.' '._/\\
+   |         |
+    \       /
+     \    /`
+   (__)  /
+   `.__.'
 """
 
 enter_casino()
