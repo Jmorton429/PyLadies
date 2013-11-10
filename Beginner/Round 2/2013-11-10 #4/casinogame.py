@@ -34,6 +34,7 @@ def pick_game():
             FantasyCasino()
 
 def slot_machine():
+<<<<<<< HEAD
     fruits = ['apple', 'watermelon', 'strawberry', 'banana']
     money = 0
     index  = random.randint(0, 3)
@@ -55,6 +56,28 @@ def slot_machine():
 def blackjack():
     deck = range(1,11)
 
+=======
+        fruits = ['apple', 'watermelon', 'strawberry', 'banana']
+        
+        index = random.randint(0, 3)
+        fruit1 = fruits[index]
+
+        index = random.randint(0, 3)
+        fruit2 = fruits[index]
+
+        index = random.randint(0, 3)
+        fruit3 = fruits[index]
+
+        print fruit1 + ' / ' + fruit2 + ' / ' + fruit3
+        if fruit1 == fruit2 == fruit3:
+                print 'You won!!!'
+        else:
+                print 'Maybe next time'
+                
+def blackjack():
+    deck = range(1,11)
+    
+>>>>>>> 5f3efc3dabfeaa9c3a35f242f99ece18e40f07a1
     myCardsSum = 0
     continuePlaying = 'y'
 
